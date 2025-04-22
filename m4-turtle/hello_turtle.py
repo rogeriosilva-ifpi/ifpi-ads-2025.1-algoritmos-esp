@@ -10,6 +10,8 @@ def principal():
 
   turtle.mainloop()
 
+  
+
 
 def configurar_turtle(bob: turtle.Turtle):
   # mudar os valores padrão: cor, shape, velocidade
