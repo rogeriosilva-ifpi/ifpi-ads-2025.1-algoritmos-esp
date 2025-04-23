@@ -1,7 +1,9 @@
 def countdown(n):
+  if n == 0:
+    return
+  
   print(n)
-  if n > 1:
-    countdown(n - 1)
+  countdown(n - 1)
   
 
 
