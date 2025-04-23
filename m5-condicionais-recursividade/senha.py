@@ -36,6 +36,8 @@ def contem_letra_minuscula(senha):
 def contem_letra_maiscula(senha):
   if len(senha) == 0:
     return False
+  
+  # return eh_maiusculo(senha[0]) or contem_letra_maiscula(senha[1:])
 
   if eh_maiusculo(senha[0]):
     return True
