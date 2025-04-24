@@ -34,15 +34,8 @@ def contem_letra_minuscula(senha):
 
 
 def contem_letra_maiscula(senha):
-  if len(senha) == 0:
-    return False
-  
-  # return eh_maiusculo(senha[0]) or contem_letra_maiscula(senha[1:])
-
-  if eh_maiusculo(senha[0]):
-    return True
-  
-  return contem_letra_maiscula(senha[1:])
+  # Operador Ternário Python (ler)
+  return False if len(senha) == 0 else eh_maiusculo(senha[0]) or contem_letra_maiscula(senha[1:])
 
 
 def contem_numero(texto):
