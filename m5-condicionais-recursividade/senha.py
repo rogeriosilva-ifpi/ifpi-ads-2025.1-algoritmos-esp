@@ -34,7 +34,7 @@ def contem_letra_minuscula(senha):
 
 
 def contem_letra_maiscula(senha):
-  # Operador Ternário Python (ler)
+  # Operador Ternário Python (ler) --> O mesmo efeito a estrutura acima(minuscula)
   return False if len(senha) == 0 else eh_maiusculo(senha[0]) or contem_letra_maiscula(senha[1:])
 
 
