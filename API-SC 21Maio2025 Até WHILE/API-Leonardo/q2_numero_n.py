@@ -38,3 +38,5 @@ def inteiro():
         
     
 main()
+
+# faltou interpretar a listar e usou recurso nao permitidos de forma crucial list,min, max etc.

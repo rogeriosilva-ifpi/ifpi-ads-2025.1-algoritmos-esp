@@ -33,3 +33,5 @@ def pedir_numero_minimo_maximo(numero, minimo,maximo):
     while (numero < minimo and numero > maximo):
         numero_minimo = int(input("Digite outro número: "))
 
+
+# Faltou entender melhor a questão. 

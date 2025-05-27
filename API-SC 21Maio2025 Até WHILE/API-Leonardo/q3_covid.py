@@ -19,3 +19,5 @@ def main():
     print(f'A média de casos por dia é : {media}')
     
 main()
+
+# O returno 0 na main invalida a questão. 

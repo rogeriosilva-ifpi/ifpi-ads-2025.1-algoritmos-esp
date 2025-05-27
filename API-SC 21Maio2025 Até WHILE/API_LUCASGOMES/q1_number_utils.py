@@ -28,5 +28,7 @@ def receber_inteiro():
 receber_inteiro()
 
 
+# Um pouco confuso.
+
 
 

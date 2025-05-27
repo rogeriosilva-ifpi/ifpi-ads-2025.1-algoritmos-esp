@@ -38,3 +38,5 @@ def inteiro_2():
     
 
 main()
+
+# Não foi recursivo.. 

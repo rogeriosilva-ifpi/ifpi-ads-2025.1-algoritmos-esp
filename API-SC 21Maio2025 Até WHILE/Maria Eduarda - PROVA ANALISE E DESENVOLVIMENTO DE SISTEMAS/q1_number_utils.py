@@ -82,3 +82,5 @@ def max_min_num():
 
 numero = max_min_num()
 print(f'{numero}')
+
+# faltou definir parametros nas funcoes. E as funcoes nao fazem a validacao corretamente. Ao nao deixar o usuário preso até digitar um valro válido.

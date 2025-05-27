@@ -67,3 +67,8 @@ else:
 
 
 print(f'A distancia das datas {dia_1}/{mes_1}/{ano_1} e {dia_2}/{mes_2}/{ano_2} é de {distancia_ano} ano(s) {distancia_meses} meses e {distancia_dia} dia(s)')
+
+
+# ficou bem estranho esses vários while True.. 
+# Sem funcoes.
+# Logica Não bate.

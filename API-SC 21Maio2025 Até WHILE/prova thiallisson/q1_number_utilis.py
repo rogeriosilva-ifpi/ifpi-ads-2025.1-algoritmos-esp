@@ -46,3 +46,5 @@ def receber_inteiro_entre(n1, n2):
 #receber_inteiro_entre()
 
 #main()
+
+# Nao atende ao pedido.

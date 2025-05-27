@@ -110,3 +110,5 @@ def calcular_diferenca(soma1, soma2):
             return f'{conv_ano_dif} ano(s), {conv_mes_dif} mês(es) e {conv_dia_dif} dia(s)'
         
 main()
+
+# Ficou boa.. mas tá calculando ligeiramente errado

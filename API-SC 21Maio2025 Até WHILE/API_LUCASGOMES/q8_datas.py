@@ -11,3 +11,7 @@ def main():
     resultado = print('A diferença entre dias é de {},  {} meses, e d {} anos'.format(dif_dias,dif_m,dif_ano))
 
 main()
+
+
+# abs nao permitod. Mas tudo bem. 
+# Lógica assim não funcoinar.. se for 31/12/2024 para 01/01/2025 deveria ser 1 dia de distancia

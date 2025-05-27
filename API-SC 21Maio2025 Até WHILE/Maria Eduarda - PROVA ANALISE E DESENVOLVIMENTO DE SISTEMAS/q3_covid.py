@@ -29,3 +29,4 @@ print(f'foram registrados: {todos_os_casos}casos! \n{resultado2}')
     
 
     
+# Bem confuso. Faltou entender a questão.
