@@ -27,3 +27,5 @@ def main():
     print('Menor número:', menor_numero)
 
 main()
+
+# Faltou interpretar sequências

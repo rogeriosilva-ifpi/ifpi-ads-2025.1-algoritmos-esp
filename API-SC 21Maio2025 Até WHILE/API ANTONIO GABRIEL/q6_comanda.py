@@ -51,3 +51,9 @@ print(f'O valor da conta: R${valor_da_conta:.2f}')
 print(f'O valor por pessoa: R${valor_por_pessoa}')
 print(f'Valor da taxa de serviço: R$ {taxa_de_serviço:.2f}')
 print(f'O valor com taxa de serviço: R$ {valor_da_conta:.2f}')
+
+
+# Faltou organizar em um Sistema em si.
+# Ter um Menu que gira até que se deseje.
+# Totalmente sem funções. 
+# A lógica de pedir apenas produto por vez não condiz com o pedido e ir até o final. 

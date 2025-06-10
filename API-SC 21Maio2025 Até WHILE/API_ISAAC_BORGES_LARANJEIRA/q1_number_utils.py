@@ -59,3 +59,7 @@ def main():
 
 if __name__ == '__main__' :
     main()
+
+
+# Faltou validar para dados que não são inteiros.
+# deveria usar int() mesmo devidamente validado.

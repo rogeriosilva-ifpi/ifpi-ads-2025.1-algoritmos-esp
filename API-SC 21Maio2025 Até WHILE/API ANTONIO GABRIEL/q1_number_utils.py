@@ -97,3 +97,7 @@ def numero_faixa():
 
 resultado = numero_faixa()
 print(resultado)
+
+
+# Faltou tratar o cenário de o usuário não digitar um valor válido
+# Deve reutilizar as função obter inteiro nas seguintes

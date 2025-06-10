@@ -38,4 +38,8 @@ def ehprimo(numeros):
     num = len(numeros)
     while True:
         ...
+        
 main()
+
+# Uso indiscriminado de While True, deve usar preferencialmente Condição de Continuidade.
+# Usou lista novamente. 
