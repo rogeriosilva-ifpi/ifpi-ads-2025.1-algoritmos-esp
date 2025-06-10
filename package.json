@@ -1,0 +1,12 @@
+{
+  "name": "ifpi-ads-2025.1-algoritmos-esp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@rogeriosilva-ifpi.github.com:rogeriosilva-ifpi/ifpi-ads-2025.1-algoritmos-esp.git",
+  "author": "Rogério Silva <rogerio410@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
