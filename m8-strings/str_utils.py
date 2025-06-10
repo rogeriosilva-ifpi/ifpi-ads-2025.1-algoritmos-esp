@@ -20,3 +20,11 @@ def obter_texto_max(label, tam_maximo):
 
 def obter_caracter(label):
   return obter_texto_max(label, 1)
+
+
+def has_no_e(palavra):
+  for letra in palavra:
+    if letra == 'e':
+      return False
+  
+  return True
