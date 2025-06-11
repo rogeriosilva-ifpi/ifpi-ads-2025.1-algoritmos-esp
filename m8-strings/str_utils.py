@@ -28,3 +28,25 @@ def has_no_e(palavra):
       return False
   
   return True
+
+def contem_proibidas(palavra, proibidas):
+  for caracter in proibidas:
+    if contem_caracter(palavra, caracter):
+      return True
+  
+  return False
+
+def contem_caracter(palavra, caracter):
+  for letra in palavra:
+    if letra == caracter:
+      return True
+  
+  return False
+
+def uses_only(palavra, letras_permitidas):
+  # usa somente as permitidas
+  for caracter in palavra:
+    if not contem_caracter(letras_permitidas, caracter):
+      return False
+  
+  return True
