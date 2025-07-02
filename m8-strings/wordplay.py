@@ -1,4 +1,4 @@
-from str_utils import contem_proibidas, has_no_e, uses_only
+from str_utils import contem_proibidas, has_no_e, uses_only, uses_all
 
 def main():
   menu = '''
@@ -8,6 +8,7 @@ def main():
   3 - Palavras sem Letra "e"
   4 - Palavras sem Letras Proibidas
   5 - Palavras somente com Letras Permitidas
+  6 - Palavras com todas as letras obrigatórios
 
   0 - Sair
   Opcao >>> '''
@@ -25,6 +26,8 @@ def main():
       mostrar_sem_letras_proibidas()
     elif opcao == 5:
       mostrar_somente_letras_permitidas()
+    elif opcao == 6:
+      mostrar_com_todas_letras_permitidas()
 
 
     input('Enter to continue...')
@@ -94,7 +97,7 @@ def mostrar_sem_letras_proibidas():
 
 
 def avoids(palavra, proibidas):
-  return not contem_proibidas(palavras, proibidas)
+  return not contem_proibidas(palavra, proibidas)
 
 def mostrar_somente_letras_permitidas():
   arquivo = open('br-sem-acentos.txt')
@@ -114,4 +117,20 @@ def mostrar_somente_letras_permitidas():
   print(f'Palavras exibidas {total_exibidas}/{total} ({percentual:.3f}%)')
 
 
+def mostrar_com_todas_letras_permitidas():
+  arquivo = open('br-sem-acentos.txt')
+  total = 0
+  total_exibidas = 0
+
+  letras_permitidas = input('Digite as letras obrigatórias: ')
+
+  for linha in arquivo:
+    total += 1
+    palavra = linha.strip()
+    if uses_all(palavra, letras_permitidas):
+      print(palavra)
+      total_exibidas += 1
+
+  percentual = (total_exibidas / total) * 100
+  print(f'Palavras exibidas {total_exibidas}/{total} ({percentual:.3f}%)')
 main()

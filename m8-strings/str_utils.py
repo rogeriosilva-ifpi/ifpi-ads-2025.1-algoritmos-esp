@@ -50,3 +50,11 @@ def uses_only(palavra, letras_permitidas):
       return False
   
   return True
+
+def uses_all(palavra, letras_obrigatorias):
+  for letra in letras_obrigatorias:
+    if not contem_caracter(palavra, letra):
+      return False
+  return True
+
+  
