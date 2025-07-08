@@ -1,0 +1,128 @@
+>>> numeros = [8, 20, -1, 0, 5]
+>>> numeros
+[8, 20, -1, 0, 5]
+>>> numeros.sort()
+>>> numeros
+[-1, 0, 5, 8, 20]
+>>> numeros = [8, 20, -1, 0, 5]
+>>> 
+
+
+
+
+
+
+
+>>> numeros
+[8, 20, -1, 0, 5]
+>>> r = sorted(numeros)
+>>> r
+[-1, 0, 5, 8, 20]
+>>> numeros
+[8, 20, -1, 0, 5]
+>>> r = sorted(numeros, reverse=True)
+>>> r
+[20, 8, 5, 0, -1]
+>>> nomes = ['Maria', 'Ana', 'Pedro', 'Rogério']
+>>> 
+
+
+
+>>> sorted(nomes)
+['Ana', 'Maria', 'Pedro', 'Rogério']
+>>> nomes
+['Maria', 'Ana', 'Pedro', 'Rogério']
+>>> r = sorted(nomes)
+>>> r
+['Ana', 'Maria', 'Pedro', 'Rogério']
+>>> r = sorted(nomes, reverse=True)
+>>> r
+['Rogério', 'Pedro', 'Maria', 'Ana']
+>>> 
+
+
+
+
+>>> 
+>>> alunos = {}
+>>> alunos = []
+>>> alunos.append({'nome': 'Fred', 'idade': 18})
+>>> alunos
+[{'nome': 'Fred', 'idade': 18}]
+>>> len(alunos)
+1
+>>> alunos.append({'nome': 'Mauritano', 'idade': 20})
+>>> 
+
+
+
+
+
+>>> len(alunos)
+2
+>>> alunos
+[{'nome': 'Fred', 'idade': 18}, {'nome': 'Mauritano', 'idade': 20}]
+>>> alunos.append({'nome': 'Leonardo', 'idade': 19})
+>>> 
+
+
+
+
+
+
+
+
+
+>>> alunos
+[{'nome': 'Fred', 'idade': 18}, {'nome': 'Mauritano', 'idade': 20}, {'nome': 'Leonardo', 'idade': 19}]
+>>> len(alunos)
+3
+>>> sorted(alunos)
+Traceback (most recent call last):
+  File "<python-input-30>", line 1, in <module>
+    sorted(alunos)
+    ~~~~~~^^^^^^^^
+TypeError: '<' not supported between instances of 'dict' and 'dict'
+>>> 
+
+
+
+>>> sorted(alunos, key='nome')
+Traceback (most recent call last):
+  File "<python-input-31>", line 1, in <module>
+    sorted(alunos, key='nome')
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+>>> def por_nome(aluno):
+...     return aluno['nome']
+...     
+>>> por_nome(alunos[0])
+'Fred'
+>>> por_nome(alunos[1])
+'Mauritano'
+>>> por_nome(alunos[2])
+'Leonardo'
+>>> 
+>>> sorted(alunos, key=por_nome)
+[{'nome': 'Fred', 'idade': 18}, {'nome': 'Leonardo', 'idade': 19}, {'nome': 'Mauritano', 'idade': 20}]
+>>> alunos
+[{'nome': 'Fred', 'idade': 18}, {'nome': 'Mauritano', 'idade': 20}, {'nome': 'Leonardo', 'idade': 19}]
+>>> def por_idade_desc(aluno):
+...     return 
+KeyboardInterrupt
+>>> 
+
+
+
+
+
+>>> def por_idade(aluno):
+...     return aluno['idade']
+...     
+>>> sorted(alunos, key=por_idade)
+[{'nome': 'Fred', 'idade': 18}, {'nome': 'Leonardo', 'idade': 19}, {'nome': 'Mauritano', 'idade': 20}]
+>>> alunos
+[{'nome': 'Fred', 'idade': 18}, {'nome': 'Mauritano', 'idade': 20}, {'nome': 'Leonardo', 'idade': 19}]
+>>> sorted(alunos, key=por_idade, reverse=True)
+[{'nome': 'Mauritano', 'idade': 20}, {'nome': 'Leonardo', 'idade': 19}, {'nome': 'Fred', 'idade': 18}]
+>>> 
