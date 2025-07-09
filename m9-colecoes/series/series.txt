@@ -1,1 +1,1 @@
-[{"id": "01JZNPXA14A2E2YG95FDMTDW5B", "nome": "Dexter", "ano": 2006, "genero": "Drama", "avaliacao": 5.0}]
+[{"id": "01JZNPXA14A2E2YG95FDMTDW5B", "nome": "Dexter", "ano": 2006, "genero": "Drama", "avaliacao": 5.0, "ativa": false}, {"id": "01JZR3TASTY6J04CKYT00P9ZZJ", "nome": "Star Trek", "ano": 1978, "genero": "Fic\u00e7\u00e3o", "avaliacao": 5.0, "ativa": true}, {"id": "01JZR4FNYNXJ2AJXE7XG2F2WFY", "nome": "Os 10 Mandamentos", "ano": 2012, "genero": "B\u00edblica", "avaliacao": 0.7, "ativa": true}]
